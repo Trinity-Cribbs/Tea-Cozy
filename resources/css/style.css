@@ -1,0 +1,139 @@
+/*Universal Styles*/
+* {
+  /*background-color: black;*/
+  color: seashell;
+  opacity: 0.9;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: black;
+}
+
+/*Header Layout*/
+header {
+  height: 69px;
+  width: 100%;
+  padding-left: 10px;
+  margin: 0;
+  border-bottom: 1px solid seashell;
+  /*Added up, the above should have a height of 70px*/
+  display: flex;
+  justify-content: space-between;
+  /*The above should divide the image from the anchors*/
+  font-size: 22px;
+  align-items: center;
+  /*The above should vertically align the image & anchors in the center of the header*/
+  position: fixed;
+  top: 0;
+  /*The above should fix the header to the top of the screen (despite scrolling).*/
+  background-color: black;
+  z-index: 1;
+  /*The above gives the header a black background & keeps it above the other elements*/
+}
+
+.logo img {
+  height: 50px;
+}
+
+a {
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+/*Mission Layout*/
+.mission {
+  background-image: url(../images/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+  /*The above sets the height & width for .mission's background image*/
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  /*The above moves .mission below the header*/
+}
+
+.headings {
+  position: absolute;
+  top: 300px;
+  /*The above positions h2 & h4 300px from the top of .mission*/
+  height: 100px;
+  width: 100%;
+  /*The above sets .headings to spread across .mission (seen via bckgrnd color)*/
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*The above centers h2 horizontally & vertically*/
+  padding: 10px;
+  margin: 0;
+  /*The above puts space between words, but keeps bckgrnd color seamless*/
+}
+
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*The above centers h2 horizontally & vertically*/
+  padding: 10px;
+  margin: 0;
+  /*The above puts space between words, but keeps bckgrnd color seamless*/
+}
+
+/*Tea of the Month Section*/
+.month {
+  width: 1000px;
+  position: absolute;
+  top: 770px;
+  left: 120px;
+  margin: 50px;
+}
+/*The above sets the width & placement of this section*/
+
+.featuring {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.images img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+.images p {
+  text-align: center;
+  font-size: 22px;
+}
+
+/*Locations Section*/
+.locations {
+  background-image: url(../images/img-locations-background.jpg);
+  width: 1200px;
+  /*height: 500px;*/
+  position: absolute;
+  top: 1500px;
+  left: 70px;
+  border: 1px solid white;
+}
+
+.locations h2 {
+  display: flex;
+  text-align: center;
+  width: 1200px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid white;
+}
