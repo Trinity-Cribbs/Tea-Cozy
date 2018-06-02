@@ -8,6 +8,7 @@
 
 body {
   background-color: black;
+  /*This makes the site's background color black*/
 }
 
 /*Header Layout*/
@@ -32,7 +33,7 @@ header {
   /*The above gives the header a black background & keeps it above the other elements*/
 }
 
-.logo img {
+#logo img {
   height: 50px;
 }
 
@@ -42,7 +43,7 @@ a {
 }
 
 /*Mission Layout*/
-.mission {
+#mission {
   background-image: url(../images/img-mission-background.jpg);
   height: 700px;
   width: 1200px;
@@ -53,7 +54,7 @@ a {
   /*The above moves .mission below the header*/
 }
 
-.headings {
+#heading {
   position: absolute;
   top: 300px;
   /*The above positions h2 & h4 300px from the top of .mission*/
@@ -84,7 +85,7 @@ h4 {
 }
 
 /*Tea of the Month Section*/
-.month {
+#month {
   width: 1000px;
   position: absolute;
   top: 770px;
@@ -93,7 +94,7 @@ h4 {
 }
 /*The above sets the width & placement of this section*/
 
-.featuring {
+#featuring {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -113,7 +114,7 @@ h4 {
 }
 
 /*Locations Section*/
-.locations {
+#locations {
   background-image: url(../images/img-locations-background.jpg);
   /*The above is styling for the .locations div*/
   padding: 0;
@@ -126,7 +127,7 @@ h4 {
   /*The above positions the .locations div*/
 }
 
-.locations h2 {
+#locations h2 {
   text-align: center;
   /*The above is styling for the h2 in .locations*/
   position: absolute;
@@ -137,7 +138,7 @@ h4 {
   /*The above positions the h2 within .locations*/
 }
 
-.trio {
+#trio {
   width: 980px;
   height: 330px;
   position: absolute;
