@@ -124,3 +124,8 @@ h4 {
   width: 1200px;
   /*The above positions the .locations div*/
 }
+
+.locations h2 {
+  text-align: center;
+  /*The above is styling for the h2 in .locations*/
+}
