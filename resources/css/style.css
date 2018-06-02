@@ -57,6 +57,7 @@ a {
   position: absolute;
   top: 300px;
   /*The above positions h2 & h4 300px from the top of .mission*/
+  background-color: black;
   height: 100px;
   width: 100%;
   /*The above sets .headings to spread across .mission (seen via bckgrnd color)*/
