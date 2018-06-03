@@ -1,6 +1,5 @@
 /*Universal Styles*/
 * {
-  /*background-color: black;*/
   color: seashell;
   opacity: 0.9;
   font-family: Helvetica;
@@ -41,6 +40,7 @@ a {
   padding-right: 20px;
   text-decoration: underline;
 }
+/*Additional header styling above*/
 
 /*Mission Layout*/
 #mission {
@@ -78,7 +78,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*The above centers h2 horizontally & vertically*/
+  /*The above centers h4 horizontally & vertically*/
   padding: 10px;
   margin: 0;
   /*The above puts space between words, but keeps bckgrnd color seamless*/
@@ -101,17 +101,20 @@ h4 {
   flex-wrap: wrap;
   padding: 0;
 }
+/*The above turns #featuring into a flex container, positioning it's flex item images.*/
 
 .images img {
   height: 200px;
   width: 300px;
   padding: 10px;
 }
+/*The above sets overall size for <img> elements*/
 
 .images p {
   text-align: center;
   font-size: 22px;
 }
+/*The above styles <p> text within .images*/
 
 /*Locations Section*/
 #locations {
@@ -129,13 +132,13 @@ h4 {
 
 #locations h2 {
   text-align: center;
-  /*The above is styling for the h2 in .locations*/
+  /*The above is styling for the h2 text in .locations*/
   position: absolute;
   top: 70px;
   margin: 0;
   padding: 0;
   width: 100%;
-  /*The above positions the h2 within .locations*/
+  /*The above positions the h2 element within .locations*/
 }
 
 #trio {
