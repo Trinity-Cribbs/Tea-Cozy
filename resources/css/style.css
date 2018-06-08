@@ -3,10 +3,17 @@
   color: seashell;
   opacity: 0.9;
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
   /*This makes the site's background color black*/
 }
 
@@ -26,6 +33,7 @@ header {
   /*The above should vertically align the image & anchors in the center of the header*/
   position: fixed;
   top: 0;
+  left: 0;
   /*The above should fix the header to the top of the screen (despite scrolling).*/
   background-color: black;
   z-index: 1;
@@ -34,6 +42,7 @@ header {
 
 #logo img {
   height: 50px;
+  padding-left: 10px;
 }
 
 a {
@@ -46,11 +55,12 @@ a {
 #mission {
   background-image: url(../images/img-mission-background.jpg);
   height: 700px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   /*The above sets the height & width for .mission's background image*/
   position: absolute;
   top: 70px;
-  left: 70px;
+  align-self: center;
   /*The above moves .mission below the header*/
 }
 
@@ -86,11 +96,11 @@ h4 {
 
 /*Tea of the Month Section*/
 #month {
-  width: 1000px;
+  max-width: 1000px;
   position: absolute;
-  top: 770px;
-  left: 120px;
-  margin: 50px;
+  top: 850px;
+  padding-top: 50px;
+  align-self: center;
 }
 /*The above sets the width & placement of this section*/
 
@@ -105,7 +115,7 @@ h4 {
 
 .images img {
   height: 200px;
-  width: 300px;
+  max-width: 300px;
   padding: 10px;
 }
 /*The above sets overall size for <img> elements*/
@@ -121,12 +131,12 @@ h4 {
   background-image: url(../images/img-locations-background.jpg);
   /*The above is styling for the .locations div*/
   padding: 0;
-  margin: 50px;
   position: absolute;
   top: 1500px;
-  left: 20px;
   height: 500px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  align-self: center;
   /*The above positions the .locations div*/
 }
 
@@ -142,19 +152,22 @@ h4 {
 }
 
 #trio {
-  width: 980px;
+  max-width: 980px;
+  width: 100%;
   height: 330px;
   position: absolute;
   top: 100px;
   left: 110px;
   /*The above positions .trio within .locations*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .square {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 300px;
+  padding: 40px;
   margin-top:  15px;
   margin-bottom: 15px;
   display: flex;
@@ -166,7 +179,40 @@ h4 {
   /*The above styles .square*/
 }
 
+.square h3 {
+  padding-bottom: 20px;
+  /*Seperates the heading from the paragraph*/
+}
+
 .square p {
   font-size: 22px;
   /*The above gives <h3> its default font-size, while setting <p> to 22px*/
+  max-height: 200px;
+  height: 100%;
+  margin: 0;
+  /*Puts space between ea. paragraph*/
+}
+
+footer {
+  position: absolute;
+  top: 2000px;
+  /*border: 1px solid white;*/
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+  max-width: 1235px;
+  width: 100%;
+  overflow-x: none;
+}
+
+#info {
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#copyright {
+  padding-left: 20px;
 }
