@@ -196,14 +196,13 @@ h4 {
 footer {
   position: absolute;
   top: 2000px;
-  /*border: 1px solid white;*/
+  /*Positions footer @ bottom of site*/
   margin: 0;
-  padding-left: 0;
   text-align: left;
   max-width: 1235px;
   width: 100%;
-  overflow-x: none;
-}
+  /*Overall styling for footer*/
+  }
 
 #info {
   text-align: center;
@@ -211,8 +210,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /*Styling & positioning for info w/i footer*/
 }
 
 #copyright {
   padding-left: 20px;
+  /*Padding for copyright w/i footer*/
 }
